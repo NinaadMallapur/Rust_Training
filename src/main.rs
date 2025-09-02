@@ -4,6 +4,11 @@ pub struct CircularBuffer {
     tail: i32,
 }
 
+pub enum Errors {
+    BufferFull,
+    BufferEmpty,
+}
+
 impl CircularBuffer {
     fn new() -> Self {
         CircularBuffer {
