@@ -1,5 +1,5 @@
 pub struct CircularBuffer {
-    array: [i32; 5],
+    array: [i32; 3],
     head: i32,
     tail: i32,
 }
@@ -7,7 +7,7 @@ pub struct CircularBuffer {
 impl CircularBuffer {
     fn new() -> Self {
         CircularBuffer {
-            array: [0; 5],
+            array: [0; 3],
             head: -1,
             tail: -1,
         }
